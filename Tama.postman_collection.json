@@ -1,0 +1,1405 @@
+{
+	"info": {
+		"_postman_id": "ced1335d-fd56-4cb3-bff5-fb1152e216d5",
+		"name": "Tama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tama",
+			"item": [
+				{
+					"name": "api/tama/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/tama/?name=tama",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"tama",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "tama"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/tama/{tama_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/tama/:tama_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"tama",
+								":tama_id"
+							],
+							"variable": [
+								{
+									"key": "tama_id",
+									"value": "C46BC941-C04F-4F5B-A09F-A2F1DDC76086"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/tama/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tama_name\" : \"Hello\",\r\n    \"tama_sex\" : \"Female\",\r\n    \"tama_age\" : 0,\r\n    \"tama_type\" : \"Kuromametchi\",\r\n    \"tama_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n    \"owner_id\" : \"99C5711E-C8C3-42F3-B1ED-378BB5A80339\",\r\n    \"health_id\" : \"8EB4776C-D7B8-40F3-97AA-F8B9C054EE5F\",\r\n    \"hunger_id\" : \"D75B4C37-E223-4B96-AA4A-50037649E9BB\",\r\n    \"happiness_id\" : \"4E8C3165-23AE-4614-8180-183E27EFAC14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/tama",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"tama"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/tama/{tama_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tama_name\" : \"Hello\",\r\n    \"tama_sex\" : \"Female\",\r\n    \"tama_age\" : 0,\r\n    \"tama_type\" : \"Kuromametchi\",\r\n    \"tama_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n    \"owner_id\" : \"99C5711E-C8C3-42F3-B1ED-378BB5A80339\",\r\n    \"health_id\" : \"8EB4776C-D7B8-40F3-97AA-F8B9C054EE5F\",\r\n    \"hunger_id\" : \"D75B4C37-E223-4B96-AA4A-50037649E9BB\",\r\n    \"happiness_id\" : \"4E8C3165-23AE-4614-8180-183E27EFAC14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/tama/:tama_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"tama",
+								":tama_id"
+							],
+							"variable": [
+								{
+									"key": "tama_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/tama/{tama_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/tama/:tama_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"tama",
+								":tama_id"
+							],
+							"variable": [
+								{
+									"key": "tama_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Owner",
+			"item": [
+				{
+					"name": "api/owner/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/owner/?name=john",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"owner",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "john"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/owner/{owner_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/owner/:owner_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"owner",
+								":owner_id"
+							],
+							"variable": [
+								{
+									"key": "owner_id",
+									"value": "9EF46335-7EC4-42E6-867F-6D6A02138600"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/owner/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"owner_name\" : \"Joe\",\r\n    \"owner_age\" : 40,\r\n    \"owner_points\" : 0,\r\n    \"owner_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/owner",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"owner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/owner/{owner_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"owner_name\" : \"Joe\",\r\n    \"owner_age\" : 40,\r\n    \"owner_points\" : 0,\r\n    \"owner_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/owner/:owner_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"owner",
+								":owner_id"
+							],
+							"variable": [
+								{
+									"key": "owner_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/owner/{owner_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/owner/:owner_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"owner",
+								":owner_id"
+							],
+							"variable": [
+								{
+									"key": "owner_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Snack",
+			"item": [
+				{
+					"name": "api/snack/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/snack/?name=melon",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"snack",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "melon"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/snack/{snack_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/snack/:snack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"snack",
+								":snack_id"
+							],
+							"variable": [
+								{
+									"key": "snack_id",
+									"value": "981CC666-0A3E-4FC1-BED2-9C4787749105"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/snack/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"snack_name\" : \"Treat\",\r\n    \"cost\" : 40,\r\n    \"snack_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/snack",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"snack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/snack/{snack_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"snack_name\" : \"Treat\",\r\n    \"cost\" : 40,\r\n    \"snack_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/snack/:snack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"snack",
+								":snack_id"
+							],
+							"variable": [
+								{
+									"key": "snack_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/snack/{snack_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/snack/:snack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"snack",
+								":snack_id"
+							],
+							"variable": [
+								{
+									"key": "snack_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "api/food/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/food/?name=apple",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"food",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "apple"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/food/{food_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/food/:food_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"food",
+								":food_id"
+							],
+							"variable": [
+								{
+									"key": "food_id",
+									"value": "F4EE856E-05DF-4069-B448-F64160BE2614"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/food/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"food_name\" : \"Meal\",\r\n    \"cost\" : 40,\r\n    \"food_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/snack",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"snack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/food/{food_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"food_name\" : \"Meal\",\r\n    \"cost\" : 40,\r\n    \"food_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/food/:food_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"food",
+								":food_id"
+							],
+							"variable": [
+								{
+									"key": "food_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/food/{food_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/food/:food_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"food",
+								":food_id"
+							],
+							"variable": [
+								{
+									"key": "food_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Health",
+			"item": [
+				{
+					"name": "api/health/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/health/?name=okay",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"health",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "okay"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/health/{health_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/health/:health_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"health",
+								":health_id"
+							],
+							"variable": [
+								{
+									"key": "health_id",
+									"value": "9ac74394-9fc6-4688-bf70-2e95a48d776a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/health/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"health_name\" : \"health\",\r\n    \"health_scale\" : 40,\r\n    \"health_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/health",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/health/{health_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"health_name\" : \"health\",\r\n    \"health_scale\" : 40,\r\n    \"health_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/health/:health_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"health",
+								":health_id"
+							],
+							"variable": [
+								{
+									"key": "health_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/health/{health_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/health/:health_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"health",
+								":health_id"
+							],
+							"variable": [
+								{
+									"key": "health_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Happiness",
+			"item": [
+				{
+					"name": "api/happiness/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/happiness/?name=neutral",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"happiness",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "neutral"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/happiness/{happiness_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/happiness/:happiness_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"happiness",
+								":happiness_id"
+							],
+							"variable": [
+								{
+									"key": "happiness_id",
+									"value": "4e8c3165-23ae-4614-8180-183e27efac14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/happiness/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"happiness_name\" : \"Happiness\",\r\n    \"happiness_scale\" : 40,\r\n    \"happiness_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/happiness",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"happiness"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/happiness/{happiness_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"happiness_name\" : \"Happiness\",\r\n    \"happiness_scale\" : 40,\r\n    \"happiness_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/happiness/:happiness_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"happiness",
+								":happiness_id"
+							],
+							"variable": [
+								{
+									"key": "happiness_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/happiness/{happiness_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/happiness/:happiness_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"happiness",
+								":happiness_id"
+							],
+							"variable": [
+								{
+									"key": "happiness_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Hunger",
+			"item": [
+				{
+					"name": "api/hunger/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/hunger/?name=starving",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"hunger",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "starving"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/hunger/{hunger_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/hunger/:hunger_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"hunger",
+								":hunger_id"
+							],
+							"variable": [
+								{
+									"key": "hunger_id",
+									"value": "550b506b-6e6b-40a4-ba0e-08d64f062b2f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/hunger/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hunger_name\" : \"Hunger\",\r\n    \"hunger_scale\" : 40,\r\n    \"hunger_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/hunger",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"hunger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/hunger/{hunger_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hunger_name\" : \"Hunger\",\r\n    \"hunger_scale\" : 40,\r\n    \"hunger_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/hunger/:hunger_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"hunger",
+								":hunger_id"
+							],
+							"variable": [
+								{
+									"key": "hunger_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/hunger/{hunger_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/hunger/:hunger_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"hunger",
+								":hunger_id"
+							],
+							"variable": [
+								{
+									"key": "hunger_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "OwnerSnack",
+			"item": [
+				{
+					"name": "api/ownersnack/{ownersnack_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/ownersnack/:ownersnack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownersnack",
+								":ownersnack_id"
+							],
+							"variable": [
+								{
+									"key": "ownersnack_id",
+									"value": "9770CF96-E962-400E-A208-8970A0336B04"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/ownersnack/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"snack_id\" : \"22C3B385-BFCC-4C0E-B592-1CDED7188D03\",\r\n    \"owner_id\" : \"D9021EC7-52F2-41C9-9339-005890975B70\",\r\n    \"ownersnack_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n    \"snack_quantity\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/ownersnack",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownersnack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/ownersnack/{ownersnack_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"snack_id\" : \"22C3B385-BFCC-4C0E-B592-1CDED7188D03\",\r\n    \"owner_id\" : \"D9021EC7-52F2-41C9-9339-005890975B70\",\r\n    \"ownersnack_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n    \"snack_quantity\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/ownersnack/:ownersnack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownersnack",
+								":ownersnack_id"
+							],
+							"variable": [
+								{
+									"key": "ownersnack_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/ownersnack/{ownersnack_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/ownersnack/:ownersnack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownersnack",
+								":ownersnack_id"
+							],
+							"variable": [
+								{
+									"key": "ownersnack_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "OwnerFood",
+			"item": [
+				{
+					"name": "api/ownerfood/{ownerfood_id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44376/api/ownerfood/:ownerfood_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownerfood",
+								":ownerfood_id"
+							],
+							"variable": [
+								{
+									"key": "ownerfood_id",
+									"value": "142AB4B2-1690-4731-89FC-163DE681AEAC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/ownerfood/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"food_id\" : \"cae4d672-61e6-4864-bf4a-0de975f935f3\",\r\n    \"owner_id\" : \"99c5711e-c8c3-42f3-b1ed-378bb5a80339\",\r\n    \"ownerfood_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n    \"food_quantity\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/ownerfood",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownerfood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/ownerfood/{ownerfood_id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"food_id\" : \"cae4d672-61e6-4864-bf4a-0de975f935f3\",\r\n    \"owner_id\" : \"99c5711e-c8c3-42f3-b1ed-378bb5a80339\",\r\n    \"ownerfood_id\" : \"38F9F57D-7D41-4948-9316-3D0E8673D62D\",\r\n    \"food_quantity\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/ownerfood/:ownerfood_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownerfood",
+								":ownerfood_id"
+							],
+							"variable": [
+								{
+									"key": "ownerfood_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/ownersnack/{ownersnack_id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44376/api/ownersnack/:ownersnack_id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44376",
+							"path": [
+								"api",
+								"ownersnack",
+								":ownersnack_id"
+							],
+							"variable": [
+								{
+									"key": "ownersnack_id",
+									"value": "38F9F57D-7D41-4948-9316-3D0E8673D62D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
